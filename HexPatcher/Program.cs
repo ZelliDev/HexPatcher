@@ -13,7 +13,7 @@ namespace Hex_Patcher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tapez le chemin et le nom du .exe a extraire l'Hexadécimal");
+            Console.WriteLine("Type the file path to the .exe file you want to extract HEX");
             string Filename = Console.ReadLine();
             byte[] Bytes1 = File.ReadAllBytes(Filename);
             
@@ -24,19 +24,20 @@ namespace Hex_Patcher
             t.Close();
             File.WriteAllBytes("hex1_string",Bytes1);
             Console.WriteLine(text);
-           // Console.ReadLine();
             Console.WriteLine("CONVERTED BYTES TO HEXADECIMAL");
             Console.WriteLine(ConvertByteToHex(Bytes1));
-            Console.WriteLine("Modifiez le fichier hex1_string et appuyez sur une touche");
+            Console.WriteLine("Modify The Hex File And Press Enter");
             Console.ReadLine();
-            Console.WriteLine(Environment.NewLine+"Editez le fichier hex1_string et entrez 'oui' pour appliquer le patch?");
+            Console.WriteLine(Environment.NewLine+"Do you want to apply that Hex file to a new file?");
             string input = Console.ReadLine();
-            if (input.ToLower() == "oui")
+            if (input.ToLower() == "yes")
             {
-                File.WriteAllBytes((@"C:\test\Test2.exe"), File.ReadAllBytes("hex1_string"));
+                Console.WriteLine("Type the file name to create");
+                string name = Console.ReadLine();
+                File.WriteAllBytes((name), File.ReadAllBytes("hex1_string"));
 
             }
-            if (input.ToLower() == "non")
+            if (input.ToLower() == "no")
             {
                 Environment.Exit(0);
             }
