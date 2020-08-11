@@ -3,6 +3,8 @@
 
 
 [![Open Source](https://img.shields.io/badge/OpenSource-Yes-green)](https://opensource.org/)
+[![Open Source](https://img.shields.io/badge/Status-Active-green)](https://opensource.org/)
+
 
 
 Easily Extract HEX from files and Patch It with Custom Hex 
