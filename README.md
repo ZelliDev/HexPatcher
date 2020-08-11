@@ -2,7 +2,7 @@
  A simple HexPatcher on file written in C#
 
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![Open Source](https://img.shields.io/badge/OpenSource-Yes-green)](https://opensource.org/)
 
 
 Easily Extract HEX from files and Patch It with Custom Hex 
