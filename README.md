@@ -22,6 +22,8 @@ Download the current release and add it to your project
 3) Patch the hex file to a new copied version of the old file
 
 
+##Note
+- I am not responsible for actions taken by users of this code
 
 ## Release History
 
